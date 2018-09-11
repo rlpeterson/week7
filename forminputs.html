@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts3.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please complete survey questions below:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Enter your full name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="food">Select your favorite food:</label>
+            <select class="form-control" id="food">
+              <option>Steak</option>
+              <option>Veggies</option>
+              <option>Cake</option>
+              <option>BBQ</option>
+            </select>
+            <input id="food" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="music">Select your favorite band:</label>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="band" value="band1" checked>
+                  Eagles
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="band" value="band2">
+                  Moby
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="band" value="band3">
+                  Mozart
+                </label>
+            </div>
+            <input id="music" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Complete Survey</button>
+        </form>
+      </div>
+
+      <div id="summary">
+        <h1>Your Order Summary</h1>
+        <p>Hi <span id="name"></span>. You like eating <span id="food"></span>. You listen to <span id="music"></span>. Thanks for your answers</p>
+      </div>
+    </div>
+  </body>
+</html>

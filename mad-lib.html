@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>A fantastical adventure</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please complete your order information below:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Enter your full name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your address:</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="order">Enter desired product:</label>
+            <input id="order" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Show me my order confirmation!</button>
+        </form>
+      </div>
+
+      <div id="summary">
+        <h1>Your Order Summary</h1>
+        <p>Hi <span class="name"></span>. We will ship your order to <span class="address"></span>. Your package will include a <span class="order"></span>. Thanks for your business!</p>
+      </div>
+    </div>
+  </body>
+</html>
